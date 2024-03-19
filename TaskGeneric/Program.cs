@@ -18,11 +18,11 @@
             Console.WriteLine("====================================");
 
             Group studentGroup = new Group();
-            Group studentGroup2 = new Group();
-            Group studentGroup3 = new Group();
-            studentGroup.info();
-            studentGroup2.info();
-            studentGroup3.info();
+            studentGroup.AddStudent(student);
+            studentGroup.AddStudent(student2);
+            studentGroup.AddStudent(student3);
+            studentGroup.GetAllStudents();
+
         }
     }
 }

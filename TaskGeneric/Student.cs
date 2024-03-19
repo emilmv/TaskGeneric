@@ -34,6 +34,7 @@
             Surname = surname;
             Point = point;
         }
+        public override string ToString() => $"{Id} Student : { Name} {Surname}";
 
     }
 }
