@@ -1,6 +1,6 @@
 ﻿namespace TaskGeneric
 {
-    internal class Student
+    internal class Student : IComparable<Student>
     {
         static int _id;
         public int Id { get; }
@@ -34,7 +34,11 @@
             Surname = surname;
             Point = point;
         }
-        public override string ToString() => $"{Id} Student : { Name} {Surname}";
+        public override string ToString() => $"{Id} Student : {Name} {Surname} // Point: {Point}";
 
+        public int CompareTo(Student? other)
+        {
+            return Point.CompareTo(other.Point);
+        }
     }
 }

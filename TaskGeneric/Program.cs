@@ -22,6 +22,7 @@
             studentGroup.AddStudent(student2);
             studentGroup.AddStudent(student3);
             studentGroup.GetAllStudents();
+            studentGroup.Sort();
 
         }
     }

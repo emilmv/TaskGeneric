@@ -33,6 +33,16 @@ namespace TaskGeneric
                 Console.WriteLine(item);
             }
         }
+        public void Sort()
+        {
+            List<Student> SortedList = Students;
+            SortedList.Sort();
+            foreach(Student item in SortedList)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
 
     }
 }
